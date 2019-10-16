@@ -12,15 +12,19 @@
 <body>
 
     <h1>Coin Flip</h1>
-    
+
     <h2>Mechanics</h2>
-    
+
     <h2>Results</h2>
     <ul>
-        <li>Player A picks <?php echo $playerA; ?></li>
-        <li>Player B defaults to <?php echo $playerB; ?></li>
-        <li>The coin landed on <?php echo $flip; ?></li>
-        <li>The winner is <?php echo $winner; ?></li>
+        <li>Player A picks <?= $playerA ?>
+        </li>
+        <li>Player B defaults to <?= $playerB ?>
+        </li>
+        <li>The coin landed on <?= $flip ?>
+        </li>
+        <li>The winner is <?= $winner ?>
+        </li>
     </ul>
 
 </body>

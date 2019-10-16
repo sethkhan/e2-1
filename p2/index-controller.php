@@ -1,18 +1,17 @@
 <?php
 $winner = null;
-$coin = ['heads', 'tails'];
-$playerA = $coin[rand(0, 1)];
 
-if ($playerA == 'heads') {
-    $playerB = 'tails';
-} else {
-    $playerB = 'heads';
-}
+$playerA = flipCoin();
 
-$flip = $coin[rand(0, 1)];
+$playerB = ($playerA == 'heads') ? 'tails' : 'heads';
 
-if ($playerA == $flip) {
-    $winner = 'Player A';
-} else {
-    $winner = 'Player B';
+$flip = flipCoin();
+
+$winner = ($playerA == $flip) ? 'Player A' : 'Player B';
+
+
+function flipCoin()
+{
+    $coin = ['heads', 'tails'];
+    return $coin[rand(0, 1)];
 }

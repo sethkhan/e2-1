@@ -13,7 +13,6 @@
 
     <h1>Week 7 Practice</h1>
 
-
 </body>
 
 </html>

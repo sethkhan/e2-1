@@ -19,4 +19,9 @@ class AppController extends Controller
     {
         return $this->app->view('contact');
     }
+
+    public function about()
+    {
+        return $this->app->view('about');
+    }
 }

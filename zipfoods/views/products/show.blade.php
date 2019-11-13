@@ -14,7 +14,7 @@
 </ul>
 @elseif($confirmationName)
 <div class='alert alert-success'>
-    Thank you, {{ $confirmationName }} for your review!
+    Thank you for your review, {{ $confirmationName }}!
 </div>
 @endif
 

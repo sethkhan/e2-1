@@ -62,6 +62,8 @@ class AppController extends Controller
             throw new \PDOException($e->getMessage(), (int)$e->getCode());
         }
 
+        dump('Connection successful');
+
 
         # EXAMPLE 1) Read data
         # Write a SQL query
@@ -85,7 +87,7 @@ class AppController extends Controller
             1,
             1)";
 
-        //$pdo->query($sql);
+        // $pdo->query($sql);
 
 
         # Example 3) Create data with prepared statements
@@ -102,7 +104,7 @@ class AppController extends Controller
         ];
 
         # Prepare & Execute
-        $statement = $pdo->prepare($sqlTemplate);
-        $statement->execute($values);
+        // $statement = $pdo->prepare($sqlTemplate);
+        // $statement->execute($values);
     }
 }
